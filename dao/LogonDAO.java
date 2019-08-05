@@ -4,5 +4,5 @@ import pojo.ATMUser;
 
 public interface LogonDAO {
 
-	boolean logonValidate(ATMUser ref);
+	boolean logonValidate(ATMUser ref); //method to validate user email and password
 }

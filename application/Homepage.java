@@ -35,12 +35,12 @@ public class Homepage {
 				refLogonController.userLogonController();
 				break;
 				
-			case 3: //if option 2 is selected, the userLogonController method under LogonController() class is called. 
+			case 3: //if option 3 is selected, the userResetController method under ResetController() class is called. 
 				ResetController refResetController = new ResetController();
 				refResetController.userResetController();
 				break;
 			
-			case 4:
+			case 4: //if option 4 is selected, the user will be logout from the ATM application. 
 				System.out.println("Logout Successfully!");
 				System.exit(0);
 				break;
@@ -48,6 +48,11 @@ public class Homepage {
 		}
 		}
 	}
-}
+
+	
+	
+		
+	}
+
 	
 

@@ -33,8 +33,7 @@ public class ResetServiceImpl implements ResetService {
 		 
 		if (refResetDAO.verifyPassword(refATMUser)==true) {
 			refResetController.NewSecurity();
-			
-			
+				
 		} else {
 			System.out.println("Password doesn't match!!");
 			refResetController.InputPassword();

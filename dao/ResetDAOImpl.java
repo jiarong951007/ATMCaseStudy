@@ -7,7 +7,7 @@ public class ResetDAOImpl implements ResetDAO {
 	//connect with DB
 
 	
-
+	//get user email and security key from getter method for verification 
 	public boolean resetValidate(ATMUser ref) {
 		
 

@@ -11,12 +11,12 @@ import pojo.ATMUser;
 public class RegisterServiceImpl implements RegisterService { 
 
 		
-
+		//method to check if email is valid
 		public void checkEmail(ATMUser ref) {
 			
 			
-			RegisterDAO refRegisterDAO = new RegisterDAOImpl();
-			RegisterController refRegisterController = new RegisterController();
+			RegisterDAO refRegisterDAO = new RegisterDAOImpl(); //create object to call method in RegisterDAO
+			RegisterController refRegisterController = new RegisterController(); //create object to call method in RegisterController
 			
 			if (refRegisterDAO.verifyEmail(ref)==true) {
 			refRegisterController.InputPassword();
@@ -25,7 +25,7 @@ public class RegisterServiceImpl implements RegisterService {
 				refRegisterController.InputEmail();
 			}
 			}
-		
+		//method to check if password and retype password matches
 		public void checkPassword(ATMUser ref) {
 			
 
@@ -41,7 +41,7 @@ public class RegisterServiceImpl implements RegisterService {
 			
 			}
 		}
-			
+			//method to check if security key is valid
 			public void checkSecurity(ATMUser ref) {
 			
 				RegisterDAO refRegisterDAO = new RegisterDAOImpl(); //create object to call method in RegisterDAO

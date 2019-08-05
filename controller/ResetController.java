@@ -2,6 +2,7 @@ package controller;
 
 import java.util.Scanner;
 
+import application.Homepage;
 import pojo.ATMUser;
 import service.RegisterServiceImpl;
 import service.ResetService;
@@ -52,17 +53,22 @@ public class ResetController {
 		
 		refATMUser.setRePassword(rePassword);
 		refResetService.checkPassword(refATMUser); }
+ 
 		
-		public void NewSecurity() {
+ public void NewSecurity() { //method to enter new security key
 			Scanner sc = new Scanner(System.in);
 			System.out.println("What is your favourite color?");
 			String userSecurity = sc.next();
 			
 			refATMUser.setSecurity(userSecurity);
-			System.out.println(userSecurity+" is your security. if your forget your password");
+			System.out.println(userSecurity+" is your security, if your forget your password");
 			System.out.println("Your password has been reset successfully");
-			
 			System.exit(0);
+			
+			
+			
+			
+	
 			
 			
 		
