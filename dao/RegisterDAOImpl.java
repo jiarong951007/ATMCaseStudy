@@ -29,15 +29,7 @@ public class RegisterDAOImpl implements RegisterDAO {
 		return status;
 	}
 	
-	// get userSecurity
-		public boolean verifySecurity(ATMUser ref) {
-			if(ref.getSecurity().equals("black")) {
-				status = true;
-			} else {
-				status = false;
-			}
-			return status;
-		}
+
 }
 	
 		

@@ -37,7 +37,8 @@ public class RegisterServiceImpl implements RegisterService {
 				refRegisterController.InputSecurity();
 			} else {
 				System.out.println("Password doesn't match!!");
-				refRegisterController.RetypePassword();
+				refRegisterController.InputPassword();
+			
 			}
 		}
 			
@@ -46,16 +47,12 @@ public class RegisterServiceImpl implements RegisterService {
 				RegisterDAO refRegisterDAO = new RegisterDAOImpl(); //create object to call method in RegisterDAO
 				RegisterController refRegisterController = new RegisterController(); //create object to call method in RegisterController
 				ATMUser refATMUser = new ATMUser();
-				
-				if (refRegisterDAO.verifySecurity(ref)==true) {
+	
 					
 					
 					System.out.println(ref.getSecurity()+" is your security key, incase if you forget your password");
 					System.out.println("\nRegistration successful!!!");
-				} else {
-					System.out.println("Please choose a valid security key");
-					refRegisterController.InputSecurity();
-				}
+
 			}
 			
 						

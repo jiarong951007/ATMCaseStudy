@@ -37,6 +37,7 @@ public class ResetServiceImpl implements ResetService {
 			
 		} else {
 			System.out.println("Password doesn't match!!");
+			refResetController.InputPassword();
 			refResetController.RetypePassword();
 		}
 	
